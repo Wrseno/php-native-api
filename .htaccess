@@ -1,4 +1,4 @@
 RewriteEngine On
 
-RewriteRule ^mahasiswa/?$ routes/mahasiswa.php [NC,L]
-RewriteRule ^mahasiswa/([0-9]+)/?$ routes/mahasiswa.php?id=$1 [NC,L]
+RewriteRule ^(event|event_categories)/?$ routes/$1.php [NC,L]
+RewriteRule ^(event|event_categories)/([0-9]+)/?$ routes/$1.php?id=$2 [NC,L]
